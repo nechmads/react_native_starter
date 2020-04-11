@@ -8,7 +8,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -25,11 +25,18 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+import SplashScreen from 'react-native-splash-screen';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 declare var global: {HermesInternal: null | {}};
 
 const App = () => {
+  // Hide the splash screen when the app comes on
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
