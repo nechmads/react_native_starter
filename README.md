@@ -14,7 +14,7 @@ Each commit represent addition of a different package so you can easily pull fro
 
 There are also a few tags you can pull from, each representing "a milestone" in the project. Each tag is built on top of the other.
 
-#### BASE Tag
+##### BASE Tag
 
 This tag contains the following packages:
 
@@ -25,7 +25,7 @@ This tag contains the following packages:
 - @react-native-community/react-native-device-info
 - react-native-keyboard-aware-scroll-view
 
-#### BASE_PLUS_REDUX Tag
+##### BASE_PLUS_REDUX Tag
 
 This tag adds the redux packages:
 
@@ -33,7 +33,7 @@ This tag adds the redux packages:
 - react-redux
 - @reduxjs/toolkit
 
-#### BASE_LOADED
+##### BASE_LOADED
 
 This tag adds the following packages:
 
@@ -43,7 +43,7 @@ This tag adds the following packages:
 - @react-native-community/react-native-permissions
 - react-native-splash-screen
 
-#### Additional Instructions
+### Additional Instructions
 
 To utilize react-native-permissions you need to edit your Pod file, your info.plist file and AndroidManifest.xml and enable the permission you want to ask for. I left all the possible options commented out in each file
 
@@ -53,3 +53,13 @@ To edit the splash screen, you need to follow a few steps such as:
 - Edit the background color of the splash screen (currently #424242)
 
 Check out the tutorial at this link: https://medium.com/@appstud/add-a-splash-screen-to-a-react-native-app-810492e773f9
+
+### Extra packages
+
+The following are extra packages you might want to add as needed:
+
+- @react-native-community/react-native-maps (https://github.com/react-native-community/react-native-maps)
+- react-native-image-crop-picker (https://github.com/ivpusic/react-native-image-crop-picker)
+- react-native-app-intro-slider (https://github.com/Jacse/react-native-app-intro-slider)
+- @react-native-community/geolocation (https://github.com/react-native-community/react-native-geolocation)
+- react-native-s3-upload (https://github.com/theyeshu/react-native-s3-upload)
